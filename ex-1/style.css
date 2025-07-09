@@ -167,4 +167,31 @@ h3 {
   left: 0px;
 }
 
-/* Start coding here */
+@media only screen and (max-width: 600px) {
+  .topic {
+    display: flex;
+    justify-content: flex-start;
+    height: fit-content;
+    margin-top: 30px;
+  }
+  
+  .row-1,
+  .row-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .categories {
+    margin-top: 25px;
+  }
+
+  .job-item,
+  .job-more {
+    position: relative;
+    margin: 10px auto;
+  }
+
+  .job-more .explore-more-arrow img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(50%) saturate(500%) hue-rotate(0deg);
+  }
+}
